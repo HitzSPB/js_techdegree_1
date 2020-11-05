@@ -13,32 +13,32 @@ function getRandomQuote() {
 const quotes = [
     {
         quote: "1I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     },
     {
         quote: "2I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     },
     {
         quote: "3I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     },
     {
         quote: "4I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     },
     {
         quote: "5I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     },
     {
         quote: "6I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-        creator: "Marilyn Monroe",
+        source: "Marilyn Monroe",
         date: Date.now()
     }
 ]
