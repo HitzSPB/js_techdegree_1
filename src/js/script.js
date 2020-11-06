@@ -91,7 +91,7 @@ const printQuote = () => {
   document.body.style.backgroundColor = backgroundColor;
 
   // Inserts our html code for the quote into the index.html file
-  divContent.innerHTML = html // insertAdjacentHTML("beforeend", html);
+  divContent.innerHTML = html
 }
 
 
