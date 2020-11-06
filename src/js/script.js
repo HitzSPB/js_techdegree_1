@@ -62,12 +62,12 @@ function getRandomQuote() {
  * `printQuote` function
 ***/
 const printQuote = () => {
-  // We need firstchild in order to not check on the quote-box div
-  if (document.querySelector("#quote-box").children.length !== 0) {
-    while (document.querySelector("#quote-box").firstChild)
-      document.querySelector("#quote-box").removeChild(document.querySelector("#quote-box").firstChild)
-  }
-  document.querySelector("#quote-box").insertAdjacentHTML("beforeend", getRandomQuote());
+  let divContent = document.querySelector("#quote-box");
+  // We need to use the following code to remove the content of the div. Removing without it will also remove the div box we select on.
+  // Alternatively we could select the specific elements and remove them.
+  while (divContent.firstChild)
+    divContent.removeChild(divContent.firstChild)
+  divContent.insertAdjacentHTML("beforeend", getRandomQuote());
 }
 
 
