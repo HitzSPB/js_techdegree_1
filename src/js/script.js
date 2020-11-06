@@ -98,8 +98,6 @@ const printQuote = () => {
   divContent.insertAdjacentHTML("beforeend", html);
 }
 
-// Calling printQuote(); to avoid having empty quote on page visit
-printQuote();
 
 /***
  * click event listener for the print quote button
