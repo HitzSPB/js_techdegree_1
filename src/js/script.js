@@ -52,15 +52,23 @@ const getRandomNumber = (maxNumber) => Math.floor(Math.random() * maxNumber);
 
 function getRandomQuote() {
   let quoteInformation = quotes[getRandomNumber(quotes.length)];
-  let html = `<p>${quoteInformation["quote"]} test</p>`
-  setHtmlMainObject(html);
+  let html = "<p class=\"quote\">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>";
+  html += `<p class="source">Patrick McKenzie<span class=\"citation\">Twitter</span><span class="year">2016</span></p>`
+  return html;
 }
 
 
 /***
  * `printQuote` function
 ***/
-const printQuote = () => document.querySelector("main").insertAdjacentHTML("beforeend", html);
+const printQuote = () => {
+  // We need firstchild in order to not check on the quote-box div
+  if (document.querySelector("#quote-box").children.length !== 0) {
+    while (document.querySelector("#quote-box").firstChild)
+      document.querySelector("#quote-box").removeChild(document.querySelector("#quote-box").firstChild)
+  }
+  document.querySelector("#quote-box").insertAdjacentHTML("beforeend", getRandomQuote());
+}
 
 
 /***
