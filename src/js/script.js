@@ -44,7 +44,7 @@ const quotes = [
     quote: "Insert own quote",
     source: "Your name",
     citation: "Your citation",
-    language: "A language you wish to pick"
+    language: "A language you wish to pick",
     year: new Date().getFullYear()
   }
 ]
