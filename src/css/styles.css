@@ -110,7 +110,8 @@ h1 {
   font-style: normal;
 }
 
-.year:before {
+/* Added .language:before as it works just as year and is a optional information in our array of objects */
+.year:before, .language:before {
   content: ", ";
   font-style: normal;
 }
