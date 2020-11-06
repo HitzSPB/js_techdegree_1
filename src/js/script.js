@@ -92,6 +92,7 @@ const printQuote = () => {
 
   // Sets a random color by setting random values on red green and blue value on the background color.
   let backgroundColor = `rgb(${getRandomNumber(256)},${getRandomNumber(256)},${getRandomNumber(256)})`;
+  console.log(`RGB Colors selected ${backgroundColor}`)
   document.body.style.backgroundColor = backgroundColor;
 
   // Inserts our html code for the quote into the index.html file
@@ -107,5 +108,5 @@ const printQuote = () => {
 // Adds a listener on the button load-quote. Each time the button is pressed the eventlistener triggers the printQuote function
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
-// Calls the printQuote function with a random interval we set it to 3000 miliseconds = 3 seconds
-setInterval(printQuote, 3000);
+// Calls the printQuote function with a random interval we set it to 8000 miliseconds = 8 seconds
+setInterval(printQuote, 8000);
