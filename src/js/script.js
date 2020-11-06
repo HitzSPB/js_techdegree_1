@@ -71,11 +71,6 @@ const printQuote = () => {
   // points a "variable" at the div box to avoid repeating the same code
   let divContent = document.querySelector("#quote-box");
 
-  // We need to use the following code to remove the content of the div. Removing without it will also remove the div box we select on.
-  // Alternatively we could select the specific elements and remove them.
-  while (divContent.firstChild)
-    divContent.removeChild(divContent.firstChild);
-
   // Calls getRandomQuote(); to fetch a quote from the array
   let quoteInformation = getRandomQuote();
 
@@ -96,7 +91,7 @@ const printQuote = () => {
   document.body.style.backgroundColor = backgroundColor;
 
   // Inserts our html code for the quote into the index.html file
-  divContent.insertAdjacentHTML("beforeend", html);
+  divContent.innerHTML = html // insertAdjacentHTML("beforeend", html);
 }
 
 
